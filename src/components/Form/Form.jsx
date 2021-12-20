@@ -2,11 +2,11 @@ import React from "react";
 
 const Form = (props) => {
 
- const handleSubmit = (event) => {
+ const handleChange = (event) => {
     event.preventDefault();
-    const search = event.target.search.value
+    const search = event.target.value
     props.setSearch(search)
-
+console.log(search)
   
   
    
@@ -17,10 +17,10 @@ const Form = (props) => {
 
   return <div>
     <h1>Busqueda de un Pokemon</h1>
-  <form onSubmit={handleSubmit}>
+  <form>
 
-    <input type="text" id="search" name="search" required="required" /><br />
-    <button type="submit">Buscar</button>
+    <input type="text" id="search" name="search"onChange={handleChange} required="required" /><br />
+   
 
     </form>
 
