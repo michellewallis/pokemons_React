@@ -17,7 +17,8 @@ const Main = () => {
 
   }
 
-
+ 
+  
 const pokeFetch= async () =>{
   
   
