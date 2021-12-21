@@ -20,20 +20,23 @@ const Main = () => {
 
 const pokeFetch= async () =>{
   
-  // const poke = parametro.search
-
-
+  
+if (debouncedText && !(pokemon.find(element => element.name === debouncedText))) {
   const resp = await axios.get(`https://pokeapi.co/api/v2/pokemon/${debouncedText.toLowerCase()}`);
-
+  
   const pokeApi = {
     name: resp.data.species.name,
     imagen: resp.data.sprites.front_default
   }
   
   setPokemon([...pokemon,pokeApi]) // Rellena estado user
-
+  
    
+  }
+
 }
+
+
 
 
 useEffect(() => {
