@@ -1,3 +1,14 @@
-.card{
- border-radius: 15%;
-}
+
+    .card{
+        background-color: #ece13e;
+        width: 40%;
+        margin: 4.6rem auto;
+        height: 8rem;
+        padding: 3rem;
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px #DECCCA;
+        height: auto;
+        
+    
+    }
+    
