@@ -1,4 +1,5 @@
 import React from "react";
+import './Form.css'
 
 const Form = (props) => {
 
@@ -16,10 +17,10 @@ console.log(search)
 
 
   return <div>
-    <h1>Busqueda de un Pokemon</h1>
-  <form>
+    <h1 className="title">Busca tu Pokemon</h1>
+  <form className="formulario">
 
-    <input type="text" id="search" name="search"onChange={handleChange} required="required" /><br />
+    <input className="redondeado" type="text" id="search" name="search"onChange={handleChange} required="required" /><br />
    
 
     </form>

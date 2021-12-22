@@ -1,4 +1,5 @@
 import React from "react";
+import './Card.css'
 
 const Card = ({info}) => {
 
@@ -7,7 +8,7 @@ const Card = ({info}) => {
 
     
   
-  <div>
+  <div className="card">
         <h1>Hola soy el pokemon:</h1>
           <h2>{name}</h2>
           <img src={imagen} alt="imagen pokemon"/> 
